@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 	<meta charset="UTF-8">
 	<title>Техномарт</title>
 	<meta name="description" content="Интернет-магазин строительных материалов и инструментов для ремонта">
 	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/symbols-technomart.css">
 </head>
 
 <body>
@@ -13,9 +16,10 @@
 		<div class="container-center">
 			<div class="top-header">
 				<a href="index.html" class="logo header-logo">Техномарт</a>
-				<input type="search" value="Поиск">
-				<a href="#" class="top-header-bookmarks">Закладки: <span class="top-header-count">0</span></a>
-				<a href="#" class="top-header-cart">Корзина: <span class="top-header-count">0</span></a>
+				<i class="icon-search"></i>
+				<input type="search" value="Поиск" class="search">
+				<a href="#" class="top-header-bookmarks icon-bookmark"> Закладки: <span class="top-header-count">0</span></a>
+				<a href="#" class="top-header-cart icon-basket"> Корзина: <span class="top-header-count">0</span></a>
 				<a href="#" class="top-header-checkout">Оформить заказ</a>
 			</div>
 			<div class="bottom-header clearfix">
@@ -26,18 +30,18 @@
 				</div>
 				<div class="bottom-header-contacts">
 					<div class="main-header-phone">
-						+7(812)555-05-55
+						<i class="icon-phone"></i> +7(812)555-05-55
 					</div>
 					<div class="main-header-adress">
 						г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
 					</div>
 				</div>
 				<div class="main-header-user">
-					<a href="#" class="btn-user btn-enter">Войти</a>
+					<a href="#" class="btn-user icon-login">Войти</a>
 					<a href="#" class="btn-user">Регистрация</a>
 				</div>
 			</div>
-			<nav class="bottom-header-menu">				
+			<nav class="bottom-header-menu">
 				<ul>
 					<li><a href="index.html">Главная</a></li>
 					<li><a href="#">Компания</a></li>
@@ -46,7 +50,7 @@
 					<li><a href="#">Спецпредложения</a></li>
 					<li><a href="#">Доставка</a></li>
 					<li><a href="#">Контакты</a></li>
-				</ul>				
+				</ul>
 			</nav>
 		</div>
 	</header>
@@ -66,16 +70,30 @@
 				<a href="#" class="promo-description">Для стройки</a>
 			</div>
 			<div class="promo-slider">
-				<div class="promo-slider-title">Дрели</div>
-				<div class="promo-slider-description">Соседям на радость</div>
-				<a href="catalog.html" class="red-btn promo-btn">Открыть каталог</a>
-				<a href="#" class="slider-arrows slider-arrow-left"></a>
-				<a href="#" class="slider-arrows slider-arrow-right"></a>
-				<div class="slider-controls">
-					<a href=""></a>
-					<a href="" class="active"></a>
+				<div class="promo-slider-item-1">
+					<div class="slider-item-title">Дрели</div>
+					<div class="slider-item-description">Соседям на радость</div>
+					<a href="catalog.html" class="red-btn slider-btn">Открыть каталог</a>
+					<a href="#" class="slider-arrows icon-left"></a>
+					<a href="#" class="slider-arrows icon-right"></a>
+					<div class="slider-controls">
+						<a href=""></a>
+						<a href="" class="active"></a>
+					</div>
+				</div>
+				<div class="promo-slider-item-2">
+					<div class="slider-item-title">Перфораторы</div>
+					<div class="slider-item-description">Настроящие мужские игрушки</div>
+					<a href="catalog.html" class="red-btn slider-btn">Открыть каталог</a>
+					<a href="#" class="slider-arrows icon-left"></a>
+					<a href="#" class="slider-arrows icon-right"></a>
+					<div class="slider-controls">
+						<a href=""></a>
+						<a href="" class="active"></a>
+					</div>
 				</div>
 			</div>
+
 			<div class="promo-item promo-discount">
 				<div class="promo-title">Скидки 50%</div>
 				<a href="#" class="promo-description">На 350 товаров</a>
@@ -171,7 +189,7 @@
 			</div>
 		</section>
 	</div>
-	
+
 	<section class="service">
 		<div class="container-center">
 			<h2 class="service-title">Сервисы</h2>
@@ -276,9 +294,9 @@
 					<br>Все права защищены
 				</div>
 				<div class="bottom-footer-social">
-					<a href="http://vk.com" class="social-btn social-btn-vk"></a>
-					<a href="http://facebook.com" class="social-btn social-btn-fb"></a>
-					<a href="http://instagramm.com" class="social-btn social-btn-instagramm"></a>
+					<a href="http://vk.com" class="social-btn icon-vk"></a>
+					<a href="http://facebook.com" class="social-btn icon-facebook"></a>
+					<a href="http://instagramm.com" class="social-btn icon-instagramm"></a>
 				</div>
 				<div class=" bottom-footer-mail">Обратная связь:
 					<br><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>

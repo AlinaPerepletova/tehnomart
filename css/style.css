@@ -1,0 +1,21 @@
+body {
+	font-family: 'Cuprum', sans-serif;
+	font-size: 17px;
+}
+
+
+/*Slider*/
+
+.promo-slider-item-1 {
+	position: relative;
+	width: 620px;
+	height: 266px;
+	background: url("../img/slide-1.jpg") no-repeat 0 0;
+}
+
+.promo-slider-item-2 {
+	position: relative;
+	width: 620px;
+	height: 266px;
+	background: url("../img/slide-2.jpg") no-repeat 0 0;
+}

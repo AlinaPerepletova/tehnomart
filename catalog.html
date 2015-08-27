@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 	<meta charset="UTF-8">
 	<title>Техномарт</title>
 	<meta name="description" content="Интернет-магазин строительных материалов и инструментов для ремонта">
 	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/symbols-technomart.css">
 </head>
 
 <body>
@@ -13,9 +16,10 @@
 		<div class="container-center">
 			<div class="top-header">
 				<a href="index.html" class="logo header-logo">Техномарт</a>
+				<i class="icon-search"></i>
 				<input type="search" value="Поиск">
-				<a href="#" class="top-header-bookmarks">Закладки: <span class="top-header-count">0</span></a>
-				<a href="#" class="top-header-cart">Корзина: <span class="top-header-count">0</span></a>
+				<a href="#" class="top-header-bookmarks icon-bookmark"> Закладки: <span class="top-header-count">0</span></a>
+				<a href="#" class="top-header-cart icon-basket"> Корзина: <span class="top-header-count">10</span></a>
 				<a href="#" class="top-header-checkout">Оформить заказ</a>
 			</div>
 			<div class="bottom-header clearfix">
@@ -33,9 +37,9 @@
 					</div>
 				</div>
 				<div class="main-header-user">
-					<div class="user-name">
+					<div class="user-name icon-user">
 						Равшан Джамшутович
-						<a href="#" class="logout"></a>
+						<a href="#" class="icon-logout"></a>
 					</div>
 					<a href="#" class="user-menu">Мои заказы</a>
 					<a href="#" class="user-menu">Личный кабинет</a>
@@ -59,10 +63,10 @@
 		<section class="catalog-page clearfix">
 			<ul class="breadcrumbs">
 				<li>
-					<a href="index.html"></a>
+					<a href="index.html" class="icon-home"></a>
 				</li>
-				<li><a href="#">Каталог</a></li>
-				<li><a href="#">Инструмент</a></li>
+				<li class="icon-right"><a href="#">Каталог</a></li>
+				<li class="icon-right"><a href="#">Инструмент</a></li>
 				<li>Перфораторы</li>
 			</ul>
 			<h1 class="catalog-title">Перфораторы</h1>
@@ -86,29 +90,43 @@
 				<hr>
 				<div class="filter-block">
 					<div class="filter-block-title">Производители:</div>
-					<input id="bosch" type="checkbox" checked>
-					<label for="bosch">Bosch</label>
+					<p>
+						<input id="bosch" type="checkbox" checked>
+						<label for="bosch">Bosch</label>
+					</p>
 
-					<input id="interscol" type="checkbox">
-					<label for="interscol">Интерскол</label>
+					<p>
+						<input id="interscol" type="checkbox">
+						<label for="interscol">Интерскол</label>
+					</p>
 
-					<input id="makita" type="checkbox" checked>
-					<label for="makita">Makita</label>
+					<p>
+						<input id="makita" type="checkbox" checked>
+						<label for="makita">Makita</label>
+					</p>
 
-					<input id="dewalt" type="checkbox">
-					<label for="dewalt">Dewalt</label>
+					<p>
+						<input id="dewalt" type="checkbox">
+						<label for="dewalt">Dewalt</label>
+					</p>
 
-					<input id="hitachi" type="checkbox">
-					<label for="hitachi">Hitachi</label>
+					<p>
+						<input id="hitachi" type="checkbox">
+						<label for="hitachi">Hitachi</label>
+					</p>
 				</div>
 				<hr>
 				<div class="filter-block">
 					<div class="filter-block-title">Питание:</div>
-					<input id="battery" type="radio" value="battery" checked>
-					<label for="battery">Аккумуляторные</label>
+					<p>
+						<input id="battery" type="radio" value="battery" checked>
+						<label for="battery">Аккумуляторные</label>
+					</p>
 
-					<input id="electric" type="radio" value="electric">
-					<label for="electric">Сетевые</label>
+					<p>
+						<input id="electric" type="radio" value="electric">
+						<label for="electric">Сетевые</label>
+					</p>
 				</div>
 				<a href="#" class="filter-btn">Показать</a>
 			</div>
@@ -281,9 +299,9 @@
 					<br>Все права защищены
 				</div>
 				<div class="bottom-footer-social">
-					<a href="http://vk.com" class="social-btn social-btn-vk"></a>
-					<a href="http://facebook.com" class="social-btn social-btn-fb"></a>
-					<a href="http://instagramm.com" class="social-btn social-btn-instagramm"></a>
+					<a href="http://vk.com" class="social-btn icon-vk"></a>
+					<a href="http://facebook.com" class="social-btn icon-facebook"></a>
+					<a href="http://instagramm.com" class="social-btn icon-instagramm"></a>
 				</div>
 				<div class=" bottom-footer-mail">Обратная связь:
 					<br><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
