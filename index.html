@@ -13,34 +13,41 @@
 
 <body>
 	<header class="main-header">
+		<div class="top-header">
+			<div class="container-center">
+				<div class="top-header-left">
+					<a href="index.html" class="logo header-logo">Техномарт</a>
+					<i class="icon-search"></i>
+					<input type="search" value="Поиск" class="search">
+				</div>
+				<div class="top-header-right">
+					<a href="#" class="top-header-bookmarks icon-bookmark"> Закладки: <span class="top-header-count">0</span></a>
+					<a href="#" class="top-header-cart icon-basket"> Корзина: <span class="top-header-count">0</span></a>
+					<a href="#" class="top-header-checkout">Оформить заказ</a>
+				</div>
+			</div>
+		</div>
+
 		<div class="container-center">
-			<div class="top-header">
-				<a href="index.html" class="logo header-logo">Техномарт</a>
-				<i class="icon-search"></i>
-				<input type="search" value="Поиск" class="search">
-				<a href="#" class="top-header-bookmarks icon-bookmark"> Закладки: <span class="top-header-count">0</span></a>
-				<a href="#" class="top-header-cart icon-basket"> Корзина: <span class="top-header-count">0</span></a>
-				<a href="#" class="top-header-checkout">Оформить заказ</a>
+			<div class="bottom-header-about">
+				Интернет-магазин
+				<br> строительных материалов
+				<br> и инструментов для ремонта
 			</div>
-			<div class="bottom-header clearfix">
-				<div class="bottom-header-about">
-					Интернет-магазин
-					<br> строительных материалов
-					<br> и инструментов для ремонта
+			<div class="bottom-header-contacts">
+				<div class="main-header-phone">
+					<i class="icon-phone"></i> +7(812)555-05-55
 				</div>
-				<div class="bottom-header-contacts">
-					<div class="main-header-phone">
-						<i class="icon-phone"></i> +7(812)555-05-55
-					</div>
-					<div class="main-header-adress">
-						г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-					</div>
-				</div>
-				<div class="main-header-user">
-					<a href="#" class="btn-user icon-login">Войти</a>
-					<a href="#" class="btn-user">Регистрация</a>
+				<div class="main-header-adress">
+					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
 				</div>
 			</div>
+			<div class="main-header-user">
+				<a href="#" class="btn-user icon-login">Войти</a>
+				<a href="#" class="btn-user">Регистрация</a>
+			</div>
+		</div>
+		<div class="container-center">
 			<nav class="bottom-header-menu">
 				<ul>
 					<li><a href="index.html">Главная</a></li>
@@ -105,13 +112,15 @@
 		</section>
 
 		<section class="popular">
-			<div class="popular-header">
+			<div class="popular-header clearfix">
 				<div class="popular-title">Популярные товары:</div>
 				<a href="catalog.html" class="red-btn popular-btn">Все популярные товары</a>
 			</div>
 			<div class="popular-view clearfix">
-				<div class="catalog-item">
-					<img src="pict/bfg9000.png" width="184" height="164" alt="Перфоратор BOSCH BFG9000">
+				<div class="popular-catalog-item">
+					<div class="catalog-item-image">
+						<img src="pict/bfg9000.png" width="184" height="164" alt="Перфоратор BOSCH BFG9000">
+					</div>
 					<div class="catalog-actions">
 						<a href="#" class="catalog-btn catalog-buy">Купить</a>
 						<a href="#" class="catalog-btn catalog-bookmark">В закладки</a>
@@ -121,8 +130,10 @@
 					<div class="catalog-item-old-price">32500 р.</div>
 					<a href="#" class="red-btn catalog-item-price">25500 р.</a>
 				</div>
-				<div class="catalog-item">
-					<img src="pict/bfg3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG3000">
+				<div class="popular-catalog-item">
+					<div class="catalog-item-image">
+						<img src="pict/bfg3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG3000">
+					</div>
 					<div class="catalog-actions">
 						<a href="#" class="catalog-btn catalog-buy">Купить</a>
 						<a href="#" class="catalog-btn catalog-bookmark">В закладки</a>
@@ -132,8 +143,10 @@
 					<div class="catalog-item-old-price">22500 р.</div>
 					<a href="#" class="red-btn catalog-item-price">15500 р.</a>
 				</div>
-				<div class="catalog-item">
-					<img src="pict/bfg6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG6000">
+				<div class="popular-catalog-item">
+					<div class="catalog-item-image">
+						<img src="pict/bfg6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG6000">
+					</div>
 					<div class="catalog-actions">
 						<a href="#" class="catalog-btn catalog-buy">Купить</a>
 						<a href="#" class="catalog-btn catalog-bookmark">В закладки</a>
@@ -143,8 +156,10 @@
 					<div class="catalog-item-old-price">30500 р.</div>
 					<a href="#" class="red-btn catalog-item-price">22500 р.</a>
 				</div>
-				<div class="catalog-item">
-					<img src="pict/bfg2000.png" width="127" height="112" alt="Перфоратор BOSCH BFG2000">
+				<div class="popular-catalog-item">
+					<div class="catalog-item-image">
+						<img src="pict/bfg2000.png" width="127" height="112" alt="Перфоратор BOSCH BFG2000">
+					</div>
 					<div class="catalog-actions">
 						<a href="#" class="catalog-btn catalog-buy">Купить</a>
 						<a href="#" class="catalog-btn catalog-bookmark">В закладки</a>
@@ -157,7 +172,7 @@
 		</section>
 
 		<section class="popular">
-			<div class="popular-header">
+			<div class="popular-header clearfix">
 				<div class="popular-title">Популярные производители:</div>
 				<a href="#" class="red-btn popular-btn">Все производители</a>
 			</div>
@@ -196,7 +211,7 @@
 			<p class=service-description>Хороший интернет-магазин отличается от плохого не только ценами!
 				<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 			<ul class="service-menu">
-				<li><a href="#">Доставка</a></li>
+				<li><a href="#" class="service-menu-active">Доставка</a></li>
 				<li><a href="#">Гарантии</a></li>
 				<li><a href="#">Кредит</a></li>
 			</ul>
@@ -225,7 +240,7 @@
 	</section>
 
 	<section class="information">
-		<div class="container-center">
+		<div class="container-center clearfix">
 			<div class="information-company">
 				<h2 class="information-title">Компания «Техномарт»</h2>
 				<p class="information-description">
