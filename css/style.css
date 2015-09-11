@@ -919,12 +919,59 @@ a.icon-home {
 	margin-bottom: 20px;
 }
 
+.catalog-sort{
+	padding: 9px 15px;
+}
+
 .catalog-sort-title {
 	float: left;
+	padding-top: 3px;
 }
 
 .catalog-sort-type {
+	display: inline-block;
 	float: right;
+	width: 550px;	
+	font-size: 0;
+	text-align: right;
+}
+.catalog-sort-type a{
+	margin-right: 60px;
+	color: rgba(0, 0, 0, .3);
+	font-size: 13px;
+	text-decoration: none;
+	border-bottom: 1px dotted rgb(238, 54, 67);
+}
+.catalog-sort-type a:nth-child(3){
+	margin: 0;
+	margin-right: 40px;
+}
+
+.catalog-sort-type a.active{
+	color: rgb(238, 54, 67);
+	border: 0;
+}
+.dir a{
+	margin: 0;
+}
+.up-dir:before{
+	content: '\25b2';
+	font-family: "symbols-technomart";
+	font-size: 23px;
+	line-height: 20px;
+}
+
+.down-dir:before{
+	content: '\25bc';
+	font-family: "symbols-technomart";
+	font-size: 23px;
+	line-height: 20px;
+	border: 0;
+	margin-left: 20px;
+}
+
+a.down-dir{
+	border: 0;
 }
 
 .filter {
@@ -1095,6 +1142,18 @@ a.icon-home {
 	color: rgb(193, 193, 193);
 }
 
+.filter-btn{
+	display: inline-block;
+	font-size: 13px;
+	line-height: 18px;
+	color: rgb(0, 0, 0);
+	padding: 8px 37px;
+	border: 1px solid rgb(229, 229, 229);
+	border-radius: 3px;
+	margin-top: 60px;
+}
+
+/*==========Pagination==========*/
 .pagination {
 	margin-bottom: 60px;
 	margin-top: 0;
@@ -1118,6 +1177,7 @@ a.icon-home {
 	border: 1px solid rgb(238, 54, 67);
 }
 .pagination a.active{
+	color: rgb(255, 255, 255);
 	background: rgb(238, 54, 67);
 	border: 1px solid rgb(238, 54, 67);
 }
