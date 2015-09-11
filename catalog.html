@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Техномарт</title>
 	<meta name="description" content="Интернет-магазин строительных материалов и инструментов для ремонта">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
@@ -15,20 +16,20 @@
 	<header class="main-header">
 		<div class="top-header">
 			<div class="container-center">
-				<div class="top-header-left">
+				<div class="top-header-left clearfix">
 					<a href="index.html" class="logo header-logo">Техномарт</a>
-					<i class="icon-search"></i>
-					<input type="search" value="Поиск" class="search">
+						<input id="search" type="search" class="header-search" placeholder="Поиск:">
+						<label for="search" class="icon-search"></label>
 				</div>
 				<div class="top-header-right">
 					<a href="#" class="top-header-bookmarks icon-bookmark"> Закладки: <span class="top-header-count">0</span></a>
-					<a href="#" class="top-header-cart icon-basket"> Корзина: <span class="top-header-count">10</span></a>
+					<a href="#" class="top-header-cart cart-count"> Корзина: <span class="top-header-count">10</span></a>
 					<a href="#" class="top-header-checkout">Оформить заказ</a>
 				</div>
 			</div>
 		</div>
 
-		<div class="container-center">
+		<div class="container-center bottom-header">
 			<div class="bottom-header-about">
 				Интернет-магазин
 				<br> строительных материалов
@@ -36,19 +37,21 @@
 			</div>
 			<div class="bottom-header-contacts">
 				<div class="main-header-phone">
-					<i class="icon-phone"></i> +7(812)555-05-55
+					 +7(812)555-05-55
 				</div>
 				<div class="main-header-adress">
 					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
 				</div>
 			</div>
 			<div class="main-header-user">
-					<div class="user-name icon-user">
+					<div class="user">
 						Равшан Джамшутович
-						<a href="#" class="icon-logout"></a>
+						<a href="#" class="logout"></a>
 					</div>
-					<a href="#" class="user-menu">Мои заказы</a>
-					<a href="#" class="user-menu">Личный кабинет</a>
+					<div class="user-menu">
+					<a href="#" class="user-menu-item">Мои заказы</a>
+					<a href="#" class="user-menu-item">Личный кабинет</a>
+					</div>
 				</div>
 		</div>
 		<div class="container-center">
@@ -333,9 +336,9 @@
 					<br>Все права защищены
 				</div>
 				<div class="bottom-footer-social">
-					<a href="http://vk.com" class="social-btn icon-vk"></a>
-					<a href="http://facebook.com" class="social-btn icon-facebook"></a>
-					<a href="http://instagramm.com" class="social-btn icon-instagramm"></a>
+					<a href="http://vk.com" class="social-btn vk"></a>
+					<a href="http://facebook.com" class="social-btn facebook"></a>
+					<a href="http://instagramm.com" class="social-btn instagramm"></a>
 				</div>
 				<div class="bottom-footer-mail">Обратная связь:
 					<br><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>

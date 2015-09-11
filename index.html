@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Техномарт</title>
 	<meta name="description" content="Интернет-магазин строительных материалов и инструментов для ремонта">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
@@ -15,12 +16,10 @@
 	<header class="main-header">
 		<div class="top-header">
 			<div class="container-center">
-				<div class="top-header-left clearfix">
+				<div class="top-header-left">
 					<a href="index.html" class="logo header-logo">Техномарт</a>
-					<div class="top-header-search">
-						<i class="icon-search"></i>
 						<input id="search" type="search" class="header-search" placeholder="Поиск:">
-					</div>
+						<label for="search" class="icon-search"></label>
 				</div>
 				<div class="top-header-right">
 					<a href="#" class="top-header-bookmarks"> Закладки: <span class="top-header-count">0</span></a>
@@ -30,7 +29,7 @@
 			</div>
 		</div>
 
-		<div class="container-center">
+		<div class="container-center bottom-header">
 			<div class="bottom-header-about">
 				Интернет-магазин
 				<br> строительных материалов
@@ -38,14 +37,14 @@
 			</div>
 			<div class="bottom-header-contacts">
 				<div class="main-header-phone">
-					<i class="icon-phone"></i> +7(812)555-05-55
+					 +7 (812) 555-05-55
 				</div>
 				<div class="main-header-adress">
 					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
 				</div>
 			</div>
 			<div class="main-header-user">
-				<a href="#" class="btn-user icon-login">Войти</a>
+				<a href="#" class="btn-user btn-user-login">Войти</a>
 				<a href="#" class="btn-user">Регистрация</a>
 			</div>
 		</div>
@@ -84,11 +83,11 @@
 					<div class="slider-item-title">Дрели</div>
 					<div class="slider-item-description">Соседям на радость</div>
 					<a href="catalog.html" class="red-btn slider-btn">Открыть каталог</a>
-					<a href="#" class="slider-arrows icon-left"></a>
-					<a href="#" class="slider-arrows icon-right"></a>
+					<a href="#" class="slider-arrows arrow-left"></a>
+					<a href="#" class="slider-arrows arrow-right"></a>
 					<div class="slider-controls">
-						<a href=""></a>
-						<a href="" class="active"></a>
+						<i></i>
+						<i class="active"></i>
 					</div>
 				</div>
 				<div class="promo-slider-item-2">
@@ -124,7 +123,7 @@
 			<div class="popular-view clearfix">
 				<div class="popular-catalog-item">
 					<div class="catalog-item-image">
-						<img src="pict/bfg9000.png" width="184" height="164" alt="Перфоратор BOSCH BFG9000">
+						<img src="pict/bfg9000.png" width="218" height="168" alt="Перфоратор BOSCH BFG9000">
 					</div>
 					<div class="catalog-actions">
 						<a href="#" class="catalog-buy">Купить</a>
@@ -137,7 +136,7 @@
 				</div>
 				<div class="popular-catalog-item">
 					<div class="catalog-item-image">
-						<img src="pict/bfg3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG3000">
+						<img src="pict/bfg3000.png" width="218" height="168" alt="Перфоратор BOSCH BFG3000">
 					</div>
 					<div class="catalog-actions">
 						<a href="#" class="catalog-buy">Купить</a>
@@ -150,7 +149,7 @@
 				</div>
 				<div class="popular-catalog-item">
 					<div class="catalog-item-image">
-						<img src="pict/bfg6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG6000">
+						<img src="pict/bfg6000.png" width="218" height="168" alt="Перфоратор BOSCH BFG6000">
 					</div>
 					<div class="catalog-actions">
 						<a href="#" class="catalog-buy">Купить</a>
@@ -161,9 +160,9 @@
 					<div class="catalog-item-old-price">30500 р.</div>
 					<a href="#" class="red-btn catalog-item-price">22500 р.</a>
 				</div>
-				<div class="popular-catalog-item">
+				<div class="popular-catalog-item new">
 					<div class="catalog-item-image">
-						<img src="pict/bfg2000.png" width="127" height="112" alt="Перфоратор BOSCH BFG2000">
+						<img src="pict/bfg2000.png" width="218" height="168" alt="Перфоратор BOSCH BFG2000">
 					</div>
 					<div class="catalog-actions">
 						<a href="#" class="catalog-buy">Купить</a>
@@ -186,28 +185,28 @@
 			</div>
 			<div class="popular-view clearfix">
 				<a href="#" class="popular-brands-item">
-					<img src="pict/bosch.png" width="126" height="37" alt="Bosch">
+					<img src="pict/bosch.png" width="126" height="143" alt="Bosch">
 				</a>
 				<a href="#" class="popular-brands-item">
-					<img src="pict/makita.png" width="123" height="40" alt="Makita">
+					<img src="pict/makita.png" width="123" height="143" alt="Makita">
 				</a>
 				<a href="#" class="popular-brands-item">
-					<img src="pict/dewalt.png" width="146" height="44" alt="DeWalt">
+					<img src="pict/dewalt.png" width="146" height="143" alt="DeWalt">
 				</a>
 				<a href="#" class="popular-brands-item">
-					<img src="pict/interscope.png" width="200" height="88" alt="Интерскол">
+					<img src="pict/interscope.png" width="200" height="143" alt="Интерскол">
 				</a>
 				<a href="#" class="popular-brands-item">
-					<img src="pict/hitachi.png" width="169" height="31" alt="Hitachi">
+					<img src="pict/hitachi.png" width="169" height="143" alt="Hitachi">
 				</a>
 				<a href="#" class="popular-brands-item">
-					<img src="pict/lg.png" width="121" height="73" alt="LG">
+					<img src="pict/lg.png" width="121" height="143" alt="LG">
 				</a>
 				<a href="#" class="popular-brands-item">
-					<img src="pict/aeg.png" width="151" height="96" alt="AEG">
+					<img src="pict/aeg.png" width="151" height="143" alt="AEG">
 				</a>
 				<a href="#" class="popular-brands-item">
-					<img src="pict/metabo.png" width="204" height="69" alt="Metabo">
+					<img src="pict/metabo.png" width="204" height="143" alt="Metabo">
 				</a>
 			</div>
 		</div>
@@ -267,7 +266,6 @@
 				<h2 class="information-title">Контакты</h2>
 				<p class="information-description">Вы можете забрать товар сами,
 					<br>заехав в наш офис:</p>
-				<!--Временно карта картинкой в html...наверное временно, в ТЗ можно картинкой или интерактивную карту-->
 				<div class="contacts-map"><img src="img/map.png" width="300" height="158"></div>
 				<a href="#" id="write-us" class="red-btn contacts-btn">Заблудились? Напишите нам!</a>
 			</div>
@@ -318,9 +316,9 @@
 					<br>Все права защищены
 				</div>
 				<div class="bottom-footer-social">
-					<a href="http://vk.com" class="social-btn icon-vk"></a>
-					<a href="http://facebook.com" class="social-btn icon-facebook"></a>
-					<a href="http://instagramm.com" class="social-btn icon-instagramm"></a>
+					<a href="http://vk.com" class="social-btn vk"></a>
+					<a href="http://facebook.com" class="social-btn facebook"></a>
+					<a href="http://instagramm.com" class="social-btn instagramm"></a>
 				</div>
 				<div class="bottom-footer-mail">Обратная связь:
 					<br><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
@@ -331,6 +329,7 @@
 			</div>
 		</div>
 	</footer>
+	
 </body>
 
 </html>
