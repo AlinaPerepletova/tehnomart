@@ -7,9 +7,10 @@
 	<meta name="description" content="Интернет-магазин строительных материалов и инструментов для ремонта">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/symbols-technomart.css">
 	<link href='http://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/symbols-technomart.css">
+	
 </head>
 
 <body>
@@ -18,8 +19,8 @@
 			<div class="container-center">
 				<div class="top-header-left">
 					<a href="index.html" class="logo header-logo">Техномарт</a>
-						<input id="search" type="search" class="header-search" placeholder="Поиск:">
-						<label for="search" class="icon-search"></label>
+					<input id="search" type="search" class="header-search" placeholder="Поиск:">
+					<label for="search" class="icon-search"></label>
 				</div>
 				<div class="top-header-right">
 					<a href="#" class="top-header-bookmarks"> Закладки: <span class="top-header-count">0</span></a>
@@ -37,7 +38,7 @@
 			</div>
 			<div class="bottom-header-contacts">
 				<div class="main-header-phone">
-					 +7 (812) 555-05-55
+					+7 (812) 555-05-55
 				</div>
 				<div class="main-header-adress">
 					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
@@ -70,7 +71,7 @@
 				<div class="promo-title">Материалы</div>
 				<a href="#" class="promo-description">На любой вкус</a>
 			</div>
-			<div href="#" class="promo-item promo-tool">
+			<div class="promo-item promo-tool">
 				<div class="promo-title">Инструмент</div>
 				<a href="#" class="promo-description">На все случаи</a>
 			</div>
@@ -78,29 +79,31 @@
 				<div class="promo-title">Техника</div>
 				<a href="#" class="promo-description">Для стройки</a>
 			</div>
-			<div class="promo-slider">
-				<div class="promo-slider-item-1">
-					<div class="slider-item-title">Дрели</div>
-					<div class="slider-item-description">Соседям на радость</div>
-					<a href="catalog.html" class="red-btn slider-btn">Открыть каталог</a>
-					<a href="#" class="slider-arrows arrow-left"></a>
-					<a href="#" class="slider-arrows arrow-right"></a>
-					<div class="slider-controls">
-						<i></i>
-						<i class="active"></i>
-					</div>
+			<div class="slider">
+				<input type="radio" id="btn-1" name="toggle">
+				<input type="radio" id="btn-2" name="toggle" checked>
+				<div class="slider-controls">
+					<label for="btn-1"></label>
+					<label for="btn-2"></label>
 				</div>
-				<div class="promo-slider-item-2">
-					<div class="slider-item-title">Перфораторы</div>
-					<div class="slider-item-description">Настроящие мужские игрушки</div>
-					<a href="catalog.html" class="red-btn slider-btn">Открыть каталог</a>
-					<a href="#" class="slider-arrows icon-left"></a>
-					<a href="#" class="slider-arrows icon-right"></a>
-					<div class="slider-controls">
-						<a href=""></a>
-						<a href="" class="active"></a>
-					</div>
-				</div>
+				<ul class="slides">
+					<li class="slide">
+						<img src="img/slide-2.jpg" alt="Перфораторы" width=
+						"620" height="266">
+						<div class="slide-title">Перфораторы</div>
+						<div class="slide-text">Настроящие мужские игрушки</div>
+					</li>
+					<li class="slide">
+						<img src="img/slide-1.jpg" alt="Дрели" width=
+						"620" height="266">
+						<div class="slide-title">Дрели</div>
+						<div class="slide-text">Соседям на радость</div>
+					</li>
+				</ul>
+					<span id="next" class="forward"></span>
+          			<span id="prev" class="back"></span>
+					<a href="catalog.html" class="red-btn slide-btn">Открыть каталог</a>
+				
 			</div>
 
 			<div class="promo-item promo-discount">
@@ -117,7 +120,7 @@
 	<section class="popular">
 		<div class="container-center">
 			<div class="popular-header clearfix">
-				<div class="popular-title">Популярные товары:</div>
+				<h2 class="popular-title">Популярные товары:</h2>
 				<a href="catalog.html" class="red-btn popular-btn">Все популярные товары</a>
 			</div>
 			<div class="popular-view clearfix">
@@ -180,7 +183,7 @@
 	<section class="popular">
 		<div class="container-center">
 			<div class="popular-header clearfix">
-				<div class="popular-title">Популярные производители:</div>
+				<h2 class="popular-title">Популярные производители:</h2>
 				<a href="#" class="red-btn popular-btn">Все производители</a>
 			</div>
 			<div class="popular-view clearfix">
@@ -216,33 +219,39 @@
 	<section class="service">
 		<div class="container-center">
 			<h2 class="service-title">Сервисы</h2>
-			<p class=service-description>Хороший интернет-магазин отличается от плохого не только ценами!
+			<p class="service-description">Хороший интернет-магазин отличается от плохого не только ценами!
 				<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 			<ul class="service-menu">
-				<li><a href="#" class="service-menu-active">Доставка</a></li>
-				<li><a href="#">Гарантии</a></li>
-				<li><a href="#">Кредит</a></li>
+				<li id="shipping" class="service-menu-active">Доставка</li>
+				<li id="guarantee">Гарантии</li>
+				<li id="credit">Кредит</li>
 			</ul>
-			<div class="service-menu-info delivery">
+			<div class="service-menu-info shipping show-service-menu-info">
 				<div class="service-menu-title">Доставка</div>
-				<p>Мы с удовольствием доставим ваш товар прямо
-					<br>к вашему подъезду совершенно бесплатно!
-					<br>Ведь мы неплохо заработаем,
-					<br>поднимая его на ваш этаж!</p>
+				<div class="service-description">
+					<p>Мы с удовольствием доставим ваш товар прямо
+						<br>к вашему подъезду совершенно бесплатно!
+						<br>Ведь мы неплохо заработаем,
+						<br>поднимая его на ваш этаж!</p>
+				</div>
 			</div>
 			<div class="service-menu-info guarantee">
 				<div class="service-menu-title">Гарантия</div>
-				<p>Если купленный у нас товар поломается или заискрит,
-					<br> а также в случае пожара, спровоцированного его возгаранием,
-					<br> вы всегда можете быть уверены в нашей гарантии. Мы обменяем
-					<br> сгоревший товар на новый.
-					<br> Дом уж восстановите как-нибудь сами.</p>
+				<div class="service-description">
+					<p>Если купленный у нас товар поломается или заискрит,
+						<br> а также в случае пожара, спровоцированного его возгаранием,
+						<br> вы всегда можете быть уверены в нашей гарантии. Мы обменяем
+						<br> сгоревший товар на новый.
+						<br> Дом уж восстановите как-нибудь сами.</p>
+				</div>
 			</div>
 			<div class="service-menu-info credit">
 				<div class="service-menu-title">Кредит</div>
-				<p>Залезть в долговую яму стало проще!</p>
-				<p>Кредитные консультанты придут вам на помощь.</p>
-				<a href="#" class="red-btn credit-btn">Отправить заявку</a>
+				<div class="service-description">
+					<p>Залезть в долговую яму стало проще!</p>
+					<p>Кредитные консультанты придут вам на помощь.</p>
+					<a href="#" class="red-btn credit-btn">Отправить заявку</a>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -260,13 +269,13 @@
 					<li>Автотрейдинг</li>
 					<li>ЖелДорЭкспедиция</li>
 				</ul>
-				<a href="#" class="red-btn information-btn">Подробнее о компании</a>
+				<a href="#" class="red-btn information-btn ">Подробнее о компании</a>
 			</div>
 			<div class="information-contacts">
 				<h2 class="information-title">Контакты</h2>
 				<p class="information-description">Вы можете забрать товар сами,
 					<br>заехав в наш офис:</p>
-				<div class="contacts-map"><img src="img/map.png" width="300" height="158"></div>
+				<div class="contacts-map"><img src="img/map.png" width="300" height="158" alt="Карта"></div>
 				<a href="#" id="write-us" class="red-btn contacts-btn">Заблудились? Напишите нам!</a>
 			</div>
 		</div>
@@ -329,7 +338,31 @@
 			</div>
 		</div>
 	</footer>
-	
+
+	<div class="contact-form">
+		<div class="contact-form-close">Закрыть</div>
+		<form class="form" action="/echo" method="post">
+			<div class="contact-form-us">
+				<label> Ваше имя:
+					<input type="text" name="name" placeholder="Пожалуйста, представьтесь" required autofocus>
+				</label>
+				<label> Ваш email:
+					<input type="email" name="mail" placeholder="Для отправки ответа" required>
+				</label>
+				<label>Текст письма:
+					<textarea placeholder="В свободной форме" rows="5"></textarea>
+				</label>
+			</div>
+		</form>
+		<div class="form-btn">
+			<input type="submit" class="red-btn" value="Отправить">
+			<input type="reset" class="red-btn" value="Отмена">
+		</div>
+	</div>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/script.js"></script>
+
 </body>
 
 </html>

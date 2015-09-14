@@ -7,9 +7,10 @@
 	<meta name="description" content="Интернет-магазин строительных материалов и инструментов для ремонта">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/symbols-technomart.css">
 	<link href='http://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/symbols-technomart.css">
+	
 </head>
 
 <body>
@@ -133,12 +134,12 @@
 				<div class="filter-block">
 					<div class="filter-block-title">Питание:</div>
 					<p>
-						<input name="power" type="radio" value="battery" checked>
+						<input name="power" id="battery" type="radio" value="battery" checked>
 						<label for="battery">Аккумуляторные</label>
 					</p>
 
 					<p>
-						<input name="power" type="radio" value="electric">
+						<input name="power" id="electric" type="radio" value="electric">
 						<label for="electric">Сетевые</label>
 					</p>
 				</div>
@@ -287,7 +288,7 @@
 
 	<section class="about-category">
 		<div class="container-center">
-			<h2>Пара слов о перфораторах</h2>
+			<h2 class="about-title">Пара слов о перфораторах</h2>
 			<p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
 				<br> Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
 		</div>
@@ -350,6 +351,7 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/jquery.js"></script>
 </body>
 
 </html>
