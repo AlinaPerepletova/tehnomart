@@ -1,5 +1,5 @@
 body {
-	font-family: 'Cuprum', sans-serif;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 17px;
 	padding: 0;
 	margin: 0;
@@ -99,7 +99,7 @@ li {
 	width: 230px;
 	height: 42px;
 	padding: 0 0 0 49px;
-	font-family: 'Cuprum', sans-serif;
+	font-family: 'Cuprum', "Arial", sans-serif;
 	font-size: 17px;
 	background: rgb(255, 255, 255);
 	background-color: rgb(41, 52, 73);
@@ -348,7 +348,7 @@ li {
 	color: rgb(197, 197, 197);
 }
 
-.user> a:before {
+.user a:before {
 	content: '\241b';
 	padding-left: 30px;
 	font-family: "symbols-technomart";
@@ -358,7 +358,7 @@ li {
 }
 
 .user:hover:before,
-.user> a:hover:before {
+.user a:hover:before {
 	color: rgb(50, 66, 92);
 }
 
@@ -367,7 +367,7 @@ li {
 }
 
 .user:active:before,
-.user> a:active:before {
+.user a:active:before {
 	color: rgb(197, 197, 197);
 }
 
@@ -533,7 +533,7 @@ li {
 	width: 620px;
 	height: 266px;
 	float: left;
-	background: gray;
+	background: rgb(181, 181, 181);
 }
 
 .slider input[type=radio] {
@@ -549,7 +549,7 @@ li {
 	height: 10px;
 	margin-left: -100px;
 	text-align: center;
-	z-index: 1000;
+	z-index: 100;
 }
 
 .slider-controls label {
@@ -566,6 +566,35 @@ li {
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"] {
 	background: rgb(239, 65, 77);
+}
+
+.arrow-controls {
+	position: absolute;
+	top: 45%;
+	width: 620px;
+	height: 42px;
+	text-align: center;
+	z-index: 100;
+}
+
+.arrow-controls label:nth-child(1):before {
+	position: absolute;
+	left: 25px;
+	content: '\3c';
+	font-family: "symbols-technomart";
+	font-size: 42px;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+}
+
+.arrow-controls label:nth-child(2):before {
+	position: absolute;
+	right: 25px;
+	content: '\3e';
+	font-family: "symbols-technomart";
+	font-size: 42px;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
 }
 
 .slide {
@@ -623,32 +652,6 @@ li {
 
 #btn-2:checked ~ .slides .slide:nth-child(2) {
 	display: block;
-}
-
-.forward,
-.back {
-	font-size: 45px;
-	text-decoration: none;
-}
-
-.back:before {
-	position: absolute;
-	top: 45%;
-	left: 25px;
-	content: '\3c';
-	font-family: "symbols-technomart";
-	font-size: 42px;
-	color: rgb(255, 255, 255);
-}
-
-.forward:before {
-	position: absolute;
-	top: 45%;
-	right: 25px;
-	content: '\3e';
-	font-family: "symbols-technomart";
-	font-size: 42px;
-	color: rgb(255, 255, 255);
 }
 
 
@@ -797,7 +800,7 @@ li {
 
 .catalog-buy,
 .catalog-bookmark {
-	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 14px;
 	display: block;
 	width: 135px;
@@ -915,7 +918,7 @@ li {
 	margin-right: 18px;
 	font-size: 13px;
 	line-height: 20px;
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	text-transform: uppercase;
 }
 
@@ -944,7 +947,7 @@ a.icon-home {
 .catalog-sort,
 .filter-title {
 	font-size: 13px;
-	font-family: 'PT Sans', sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	text-transform: uppercase;
 	color: rgb(0, 0, 0);
 	background-color: rgb(247, 243, 236);
@@ -1035,7 +1038,7 @@ a.icon-home {
 .filter {
 	float: left;
 	width: 220px;
-	font-family: 'PT Sans', sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 15px;
 	line-height: 20px;
 	margin-right: 20px;
@@ -1094,6 +1097,8 @@ a.icon-home {
 	border-radius: 50%;
 	border: 8px solid rgb(255, 255, 255);
 	background: rgb(171, 171, 171);
+	-webkit-box-shadow: 0 2px 1px rgb(207, 207, 207);
+	-moz-box-shadow: 0 2px 1px rgb(207, 207, 207);
 	box-shadow: 0 2px 1px rgb(207, 207, 207);
 	cursor: pointer;
 }
@@ -1134,7 +1139,7 @@ a.icon-home {
 }
 
 .price-controls input {
-	font-family: 'PT Sans', sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 17px;
 	width: 95px;
 	padding: 8px 0;
@@ -1226,7 +1231,6 @@ a.icon-home {
 	color: rgb(0, 0, 0);
 	padding: 8px 37px;
 	border: 1px solid rgb(229, 229, 229);
-	border-radius: 3px;
 	margin-top: 60px;
 }
 
@@ -1244,7 +1248,7 @@ a.icon-home {
 	padding: 10px 16px;
 	border: 1px solid rgb(229, 229, 229);
 	border-radius: 3px;
-	font-family: "PT Sans", Arial, sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 16px;
 	text-transform: uppercase;
@@ -1274,13 +1278,13 @@ a.icon-home {
 }
 
 .about-category p {
-	font-family: "PT Sans", Arial, sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 }
 
 .about-title {
-	font-family: "Cuprum", Arial, sans-serif;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-weight: 400;
 	font-size: 30px;
 	text-transform: uppercase;
@@ -1302,7 +1306,7 @@ a.icon-home {
 
 .service-description {
 	margin-bottom: 75px;
-	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 }
@@ -1407,7 +1411,7 @@ li.service-menu-active:hover {
 .information-company p,
 .information-contacts p {
 	margin-bottom: 30px;
-	font-family: "PT Sans", Arial, sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 }
@@ -1446,6 +1450,7 @@ ul.information-shipping li:before {
 }
 
 .contacts-map {
+	display: inline-block;
 	width: 300px;
 	height: 162px;
 	margin-bottom: 35px;
@@ -1519,21 +1524,21 @@ ul.footer-menu {
 	margin-right: 0;
 }
 
-.footer-menu li>a {
+.footer-menu a {
 	color: rgb(255, 255, 255);
 }
 
-.footer-links li>a {
+.footer-links a {
 	color: rgb(255, 209, 128);
 }
 
-.footer-menu li>a:hover,
-.footer-links li>a:hover {
+.footer-menu a:hover,
+.footer-links a:hover {
 	text-decoration: underline;
 }
 
-.footer-menu li>a:active,
-.footer-links li>a:active {
+.footer-menu a:active,
+.footer-links a:active {
 	text-decoration: none;
 	opacity: .5;
 }
@@ -1639,9 +1644,9 @@ ul.footer-menu {
 	background: rgb(255, 255, 255);
 	border-top: 7px solid #ee3643;
 	font-size: 0;
-	-webkit-box-shadow: 0px 20px 40px -10px black;
-	box-shadow: 0px 20px 40px -10px black;
-	-webkit-transition: opacity 0.4s, visibility 0s linear 0.4s;
+	-webkit-box-shadow: 0px 20px 40px -10px rgb(0, 0, 0);
+	-moz-box-shadow: 0px 20px 40px -10px rgb(0, 0, 0);
+	box-shadow: 0px 20px 40px -10px rgb(0, 0, 0);
 	z-index: 200;
 }
 
@@ -1693,7 +1698,7 @@ ul.footer-menu {
 .contact-form-us::-webkit-input-placeholder,
 .contact-form-us input[placeholder],
 .contact-form-us textarea[placeholder] {
-	font-family: "PT Sans", Arial, sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 }
@@ -1701,7 +1706,7 @@ ul.footer-menu {
 .contact-form-us::-moz-placeholder,
 .contact-form-us:-moz-placeholder,
 .contact-form-us:-ms-input-placeholder {
-	font-family: "PT Sans", Arial, sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 }
@@ -1744,7 +1749,9 @@ ul.footer-menu {
 	margin-left: -390px;
 	margin-top: -360px;
 	border: 7px solid white;
-	background: #e9e5dc url("img/map.png");
+	background: #e9e5dc url("../img/big-map.png");
+	-webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, .7);
+	-moz-box-shadow: 0 30px 50px rgba(0, 0, 0, .7);
 	box-shadow: 0 30px 50px rgba(0, 0, 0, .7);
 	z-index: 200;
 }
@@ -1770,3 +1777,98 @@ ul.footer-menu {
 .contact-form-show {
 	display: block;
 }
+
+/*==========Progressive enhancement===========*/
+.content-map{
+	width: 769px;
+	height: 501px;
+	margin: 60px auto;
+	border: 7px solid rgb(241, 245, 247);
+}
+
+.contact-form-page{
+	width: 640px;
+	margin: 0 auto 35px;
+}
+
+/*==========symbols-technomart==========*/
+@charset "UTF-8";
+
+ @font-face {
+  font-family: 'symbols-technomart';
+  src: url('../font/symbols-technomart.eot?22619757');
+  src: url('../font/symbols-technomart.eot?22619757#iefix') format('embedded-opentype'),
+       url('../font/symbols-technomart.woff?22619757') format('woff'),
+       url('../font/symbols-technomart.ttf?22619757') format('truetype'),
+       url('../font/symbols-technomart.svg?22619757#symbols-technomart') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'symbols-technomart';
+    src: url('../font/symbols-technomart.svg?22619757#symbols-technomart') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "symbols-technomart";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-left:before { content: '\3c'; } /* '&lt;' */
+.icon-right:before { content: '\3e'; } /* '&gt;' */
+.icon-basket:before { content: '\62'; } /* 'b' */
+.icon-facebook:before { content: '\66'; } /* 'f' */
+.icon-twitter:before { content: '\74'; } /* 't' */
+.icon-vk:before { content: '\76'; } /* 'v' */
+.icon-up:before { content: '\2c4'; } /* '˄' */
+.icon-down:before { content: '\2c5'; } /* '˅' */
+.icon-left-big:before { content: '\2190'; } /* '←' */
+.icon-right-big:before { content: '\2192'; } /* '→' */
+.icon-login:before { content: '\2386'; } /* '⎆' */
+.icon-logout:before { content: '\241b'; } /* '␛' */
+.icon-up-dir:before { content: '\25b2'; } /* '▲' */
+.icon-down-dir:before { content: '\25bc'; } /* '▼' */
+.icon-circle:before { content: '\25cb'; } /* '○' */
+.icon-circle-dot:before { content: '\25cf'; } /* '●' */
+.icon-star:before { content: '\2605'; } /* '★' */
+.icon-check-off:before { content: '\2610'; } /* '☐' */
+.icon-check-on:before { content: '\2611'; } /* '☑' */
+.icon-youtube:before { content: '\f39e'; } /* '' */
+.icon-home:before { content: '🏠'; } /* '\1f3e0' */
+.icon-user:before { content: '👨'; } /* '\1f468' */
+.icon-phone:before { content: '📞'; } /* '\1f4de' */
+.icon-instagramm:before { content: '📷'; } /* '\1f4f7' */
+.icon-search:before { content: '🔍'; } /* '\1f50d' */
+.icon-bookmark:before { content: '🔖'; } /* '\1f516' */
