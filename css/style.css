@@ -230,7 +230,7 @@ li {
 .bottom-header-about {
 	float: left;
 	width: 246px;
-	margin: 43px 53px 41px;
+	margin: 45px 53px 40px;
 	margin-right: 10px;
 	color: rgb(238, 54, 67);
 	font-size: 16px;
@@ -241,14 +241,18 @@ li {
 .bottom-header-contacts {
 	float: left;
 	width: 273px;
-	margin: 41px 10px;
+	margin-top: 45px;
 }
 
 .main-header-user {
 	float: right;
-	width: 300px;
-	margin: 42px 0;
+	width: 285px;
+	margin-top: 45px;
 	text-align: right;
+}
+
+.user-login{
+	width: 300px;
 }
 
 .main-header-phone {
@@ -332,8 +336,7 @@ li {
 .user {
 	width: 300px;
 	background: #fff;
-	padding: 10px;
-	padding-left: 0px;
+	padding: 10px 0 10px 0;	
 	font-size: 21px;
 	text-align: left;
 }
@@ -682,6 +685,7 @@ li {
 
 .popular-view {
 	font-size: 0;
+	margin-bottom: 40px;
 }
 
 .catalog-items {
@@ -705,6 +709,7 @@ li {
 	background: rgb(255, 255, 255);
 	margin-right: 20px;
 	margin-bottom: 20px;
+	font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .popular-brands-item:hover {
@@ -783,7 +788,7 @@ li {
 	right: -20px;
 	width: 0;
 	height: 0;
-	border: 20px solid rgb(255, 255, 255);
+	border: 21px solid rgb(255, 255, 255);
 	border-left-color: rgb(238, 54, 67);
 }
 
@@ -1167,13 +1172,15 @@ a.icon-home {
 	width: 30px;
 	display: inline-block;
 	margin-right: 10px;
-	text-align: center;
+	text-align: left;
 	vertical-align: bottom;
 	color: rgb(193, 193, 193);
 }
 
-.filter-block input[type="checkbox"]:hover + label:before,
-.filter-block input[type="radio"]:hover + label:before {
+.filter-block input[type="checkbox"] + label:hover:before,
+.filter-block input[type="checkbox"]:checked + label:hover:before,
+.filter-block input[type="radio"] + label:hover:before,
+.filter-block input[type="radio"]:checked + label:hover:before{
 	color: rgb(181, 181, 181);
 }
 
@@ -1194,7 +1201,7 @@ a.icon-home {
 	line-height: 20px;
 	display: inline-block;
 	margin-right: 10px;
-	text-align: center;
+	text-align: left;
 	vertical-align: bottom;
 	color: rgb(193, 193, 193);
 }
@@ -1207,7 +1214,7 @@ a.icon-home {
 	width: 30px;
 	display: inline-block;
 	margin-right: 10px;
-	text-align: center;
+	text-align: left;
 	vertical-align: bottom;
 	color: rgb(193, 193, 193);
 }
@@ -1219,7 +1226,7 @@ a.icon-home {
 	line-height: 20px;
 	display: inline-block;
 	margin-right: 10px;
-	text-align: center;
+	text-align: left;
 	vertical-align: bottom;
 	color: rgb(193, 193, 193);
 }
@@ -1274,7 +1281,7 @@ a.icon-home {
 
 .about-category {
 	background-color: rgb(242, 246, 248);
-	padding: 35px 0;
+	padding: 35px 0 55px;
 }
 
 .about-category p {
@@ -1301,11 +1308,14 @@ a.icon-home {
 
 .service-title {
 	padding-top: 60px;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 400;
 }
 
 .service-description {
-	margin-bottom: 75px;
+	margin-bottom: 70px;
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
@@ -1406,6 +1416,13 @@ li.service-menu-active:hover {
 	float: left;
 	width: 600px;
 	min-height: 350px;
+}
+
+.information-title{
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 30px;
 }
 
 .information-company p,
